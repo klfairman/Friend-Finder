@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+	<link rel="stylesheet" href="css/reset.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+ 	<!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/style.css">
+    
+    <title>Friend Finder Survey</title>
+  </head>
+
+    <nav>
+        <div class="nav-wrapper green-accent-4">
+            <a href="#" class="brand-logo"><h4>Friend Finder Survey</h4></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="/api/friends"><h7>API Friends List</h7></a></li>
+          <li><a href="https://github.com/klfairman/friend-finder"><h7>GitHub Repo</h7></a></li>
+        </ul>
+        </nav>
+        <main>
+            <div class="container">
+              <div class="row">
+                <div class="col s12 z-depth-5 mainpanel">
+                  <div id="mainpanel-content">
+                    <h2>Survey Questions</h2>
+                    <div class="divider"></div>
+        
+                    <h4>About You</h4>
+        
+                    <div class="input-field col s6">
+                      <h4>Name (Required)</h4>
+                      <input type="text" class="validate" placeholder="Your Name Here" id="userName">
+                    </div>
+        
+                    <div class="input-field col s6">
+                      <h4>Link a Photo (Required)</h4>
+                      <input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+                    </div>
+        
+        
+          <div class="input-field col s12">
+            <h4><strong>Question 1</strong></h4>
+            <h6>I enjoy singing in the car.</h6>
+            <select id="question1">
+           
+              <option value="" disabled selected>Choose your option</option>
+              <option value=""></option>
+              <option value="1">1 (My voice would cause the car to explode. So, no.)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Do, Re, Mi!!!)</option>
+            </select>
+            </div>
+        
+            <div class="input-field col s12">
+            <h4><strong>Question 2</strong></h4>
+            <h6>I enjoy laughing.</h6>
+            <select id="question2">
+            
+              <option value="" disabled selected>Choose your option</option>
+              <option value=""></option>
+              <option value="1">1 (I hate everyone.)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Who doesn't?)</option>
+            </select>
+            </div>
+        
+            <div class="input-field col s12">
+            <h4><strong>Question 3</strong></h4>
+            <h6>My favorite season is winter.</h6>
+            <select id="question3">
+            
+              <option value="" disabled selected>Choose your option</option>
+              <option value=""></option>
+              <option value="1">1 (Eternal Summer!!!)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Break out my skis!!!)</option>
+            </select>
+            </div>
+        
+            <div class="input-field col s12">
+            <h4><strong>Question 4</strong></h4>
+            <h6>The Packers are a great team.</h6>
+            <select id="question4">
+            
+              <option value="" disabled selected>Choose your option</option>
+              <option value=""></option>
+              <option value="1">1 (The Packers are the worst.)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Go, Pack, Go!!!)</option>
+            </select>
+            </div>
+        
+            <div class="input-field col s12">
+            <h4><strong>Question 5</strong></h4>
+            <h6>Naps are my favorite afternoon activity.</h6>
+            <select id="question5">
+            
+                <option value="" disabled selected>Choose your option</option>
+              <option value=""></option>
+              <option value="1">1(Snooooooze.)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (My afternoons are filled with activity.)</option>
+            </select>
+            </div>
+        
+            <div class="input-field col s12">
+            <h4><strong>Question 6</strong></h4>
+            <h6>Minnesota is a nice place to live.</h6>
+            <select id="question6">
+            
+              <option value="" disabled selected>Choose your option</option>
+              <option value=""></option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (You betcha!)</option>
+            </select>
+            </div>
+        
+            <div class="input-field col s12">
+            <h4><strong>Question 7</strong></h4>
+            <h6>Marijuana should be legal in the US.</h6>
+            <select id="question7">
+           
+              <option value="" disabled selected>Choose your option</option>
+              <option value=""></option>
+              <option value="1">1 (Weed kills.)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Why has it been illegal for so long?)</option>
+            </select>
+            </div>
+        
+            <div class="input-field col s12">
+            <h4><strong>Question 8</strong></h4>
+            <h6>People would describe me as an introvert.</h6>
+            <select id="question8">
+            
+              <option value="" disabled selected>Choose your option</option>
+              <option value=""></option>
+              <option value="1">1 (Not at all.)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Yes, they would.)</option>
+            </select>
+            </div>
+        
+            <div class="input-field col s12">
+            <h4><strong>Question 9</strong></h4>
+            <h6>I am more of a cat person than a dog person.</h6>
+            <select id="question9">
+            
+              <option value="" disabled selected>Choose your option</option>
+              <option value=""></option>
+              <option value="1">1 (Woof!)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Meow!)</option>
+            </select>
+            </div>
+        
+            <div class="input-field col s12">
+            <h4><strong>Question 10</strong></h4>
+            <h6>Clowns are creepy.</h6>
+            <select id="question10">
+            
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">1 (Strongly Disagree)</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 (Strongly Agree)</option>
+            </select>
+            </div>
+        
+            <br>
+            <br>
+        
+            <!-- Submit Button -->
+          </div>
+          <div>
+							<button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Responses
+								<i class="material-icons right">send</i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+  <div class="footer-copyright">
+      <div class="container">
+      © 2018 KLF 
+      </div>
+    </div>
+  </footer>
+            <!-- Modal Dialog Displaying Closest Friend Match -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Closest Friend Match</h4>
+			<div class="divider"></div>
+			<h5 id="userMatch"></h5>
+			<img id="userMatchImage" class="materialboxed" width="650" src="">
+		</div>
+		<div class="modal-footer">
+			<a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Fill Again!</a>
+		</div>
+	</div>  
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('select').material_select();
+			$('.modal').modal({
+				dismissible: false, // Modal can be dismissed by clicking outside of the modal
+				opacity: .5, // Opacity of modal background
+				inDuration: 300, // Transition in duration
+				outDuration: 200, // Transition out duration
+				startingTop: '4%', // Starting top style attribute
+				endingTop: '10%' // Ending top style attribute
+			});
+		});
+		// Activate submit button
+		$('#submitButton').on('click', function(event) {
+			event.preventDefault();
+			// Gather user inputs
+			var userInput = {
+				name: $('#userName').val().trim(),
+				photo: $('#userPhoto').val().trim(),
+				scores:[
+					$('#question1').val().trim(),
+					$('#question2').val().trim(),
+					$('#question3').val().trim(),
+					$('#question4').val().trim(),
+					$('#question5').val().trim(),
+					$('#question6').val().trim(),
+					$('#question7').val().trim(),
+					$('#question8').val().trim(),
+					$('#question9').val().trim(),
+					$('#question10').val().trim()
+				]
+			};
+			// console.log('userInput = ' + JSON.stringify(userInput));
+			// Add user inputs to friends list
+			$.post('/api/friends', userInput)
+      		.done(function(data) {
+      			// console.log('response = ' + JSON.stringify(data));
+      			// Set the name and image values of friend match
+      			$('#userMatch').html(data.matchName);
+		    	$("#userMatchImage").attr("src", data.matchImage);
+		    	// Pop open the modal dialog
+      			$('#modal1').modal('open');
+      		});
+		});
+  </script>
+        
+          </div>
+          <script type="text/javascript" src="js/materialize.min.js"></script>
+</head>
+</html>
