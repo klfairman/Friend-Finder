@@ -7,7 +7,7 @@ module.exports = function(app) {
 	// console.log('___ENTER htmlRoutes.js___');
 
 	// Home page
-	app.get('/home', function(req, res) {
+	app.get('/', function(req, res) {
 		res.sendFile(path.join(__dirname, '../public/home.html'));
 	});
 
