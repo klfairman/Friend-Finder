@@ -22,7 +22,7 @@ require(path.join(__dirname, '/app/routing/apiRoutes'))(app);
 require(path.join(__dirname, '/app/routing/htmlRoutes'))(app);
 // require(path.join(__dirname, './app/data/friends'))(app);
 
-
+app.listen(port);
 app.listen(PORT, function() {
     // Log (server-side) when our server has started
     console.log("Server listening on: http://localhost:" + PORT);
